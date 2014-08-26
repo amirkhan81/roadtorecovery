@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Universal Styles
+   ========================================================================== */
+* {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* ==========================================================================
+   Burger
+   ========================================================================== */
+.burger {
+	text-transform: uppercase;
+	height: 17px;
+	line-height: 17px;
+	padding-right: 23px;
+	background: url(/images/burger.gif) no-repeat right top;
+	display: block;
+	font-size: 22px;
+}
+
+/* ==========================================================================
+   Main Header
+   ========================================================================== */
+#mainHead {
+	position: relative;
+	height: 140px;
+	overflow: hidden;
+}
+	#logo {
+		position: relative;
+		left: 40px;
+		top: 36px;
+	}
+	.burger {
+		position: absolute;
+		right: 40px;
+		top: 36px;
+	}
+	#accessibility {
+		position: absolute;
+		right: 40px;
+		bottom: 0;
+	}
+/* ==========================================================================
+   MainNav
+   ========================================================================== */
+#mainNav {
+	background: $rrGreen;
+}
+	.panel {
+	    position: fixed;
+	    right: -320px; /*left or right and the width of your navigation panel*/
+	    width: 320px; /*should match the above value*/
+	    z-index: 999;
+	}
+	.wrap { 
+	    position: relative; 
+	    width: 100%;
+	}
+	#mainNav li a {
+		color: #333;
+	}
+/* ==========================================================================
+   Thumbnails
+   ========================================================================== */
+#equipmentNav {
+	margin-bottom: 10px;
+}
+#equipmentNav ul {
+	width: 95%; 
+	margin: 0 auto;
+	white-space: nowrap;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: 15px;
+	height: 135px;
+}
+#equipmentNav li {
+	display: inline;
+}
+#equipmentNav li a {
+	display: inline-block;
+	width: 160px;
+	@include grayGradient();
+	color: #fff;
+	text-align: center;
+	font-family: $ms300;
+	text-transform: uppercase;
+	font-size: .85em;
+	padding: 0 10px 10px 10px;
+}
+	#equipmentNav li a:hover, #equipmentNav li a.active {
+		@include blueGradient();
+	}
+
+	#equipmentNav li a span {
+		display: block; padding-top: 80px; 
+		background-repeat: no-repeat; background-position: center center;
+	}
+	.adlbathroom a span {background-image: url(/images/icons/adlbathroom.png);	}
+	.adldressing a span {background-image: url(/images/icons/adldressing.png);	}
+	.adlkitchen a span {background-image: url(/images/icons/adlkitchen.png);	}
+	.adllaundry a span {background-image: url(/images/icons/adllaundry.png);	}
+	.assessment a span {background-image: url(/images/icons/assessment.png);	}
+	.diathermy a span {background-image: url(/images/icons/diathermy.png);	}
+	.dynamicstair a span {background-image: url(/images/icons/dynamicstair.png);	}
+	.electricstimulation a span {background-image: url(/images/icons/electricstimulation.png);	}
+	.handtherapy a span {background-image: url(/images/icons/handtherapy.png);	}
+	.lifefitness a span {background-image: url(/images/icons/lifefitness.png);	}
+	.mattable a span {background-image: url(/images/icons/mattable.png);	}
+	.nustep a span {background-image: url(/images/icons/nustep.png);	}
+	.omnicycle a span {background-image: url(/images/icons/omnicycle.png);	}
+	.omnivr a span {background-image: url(/images/icons/omnivr.png);	}
+	.outdoorpath a span {background-image: url(/images/icons/outdoorpath.png);	}
+	.parallel a span {background-image: url(/images/icons/parallel.png);	}
+	.stairs a span {background-image: url(/images/icons/stairs.png);	}
+	.treadmill a span {background-image: url(/images/icons/treadmill.png);	}
+	.ultrasound a span {background-image: url(/images/icons/ultrasound.png);	}
+	.wii a span {background-image: url(/images/icons/wii.png);	}
+
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+#sliderWrap {
+	margin: 0 auto;
+	width: auto;
+	overflow: hidden;
+	position: relative;
+	height: 300px;
+}
+#slider {width:510px;overflow:visible !important;position:relative;}
+
+/* Sudo Slider */
+#slider ul, #slider li{margin:0;padding:0;list-style:none;position:relative;display:block;}
+#slider ul li {margin-right: 10px !important;}
+
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+
+
+
+.blackLeft, .blackRight {background:#fff;height:300px;width:100px;z-index:996;position:absolute;top:0; cursor: pointer;}
+.blackRight {right:0;}
+
+
+#slideControls {
+	width: 100%;
+	margin: 0 auto 0 auto;
+	position: relative;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: -170px;
+	z-index: 999;
+}
+	.prev {
+		left: 0;
+	}
+	.next {
+		right: 0;
+	}
+	// .slideNumber {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	z-index: 999;
+	// 	width: 35px;
+	// 	height: 45px;
+	// 	line-height: 52px;
+	// 	text-align: center;
+	// 	background: $rrGreen;
+	// 	color: #fff;
+	// 	font-family: $ms500;
+	// 	font-size: .75em;
+	// }
+
+/* ==========================================================================
+   Rows
+   ========================================================================== */
+    .row:before,
+    .row:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .row:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+
+    .row {
+        *zoom: 1;
+    }
+    	.row.topPadding {
+    		padding-top: 30px;
+    	}
+
+
+/* ==========================================================================
+   Large Screens
+   ========================================================================== */
+@media only screen 
+and (min-width: 767px) {
+	/* ==========================================================================
+	   Center rows
+	   ========================================================================== */
+	.center {
+		width: 734px;
+		margin: 0 auto;
+	}
+	 	.center {
+			max-width: 1200px;
+		}
+	/* ==========================================================================
+	   columns
+	   ========================================================================== */
+
+    .col {
+	display: block;
+		float:left;
+		margin: 1% 0 1% 1.6%;
+	}
+
+	.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */   
+
+	.span_6_of_6 {
+		width: 100%;
+	}
+
+	.span_5_of_6 {
+	  	width: 83.06%;
+	}
+
+	.span_4_of_6 {
+	  	width: 66.13%;
+	}
+
+	.span_3_of_6 {
+	  	width: 49.2%;
+	}
+
+	.span_2_of_6 {
+	  	width: 32.26%;
+	}
+
+	.span_1_of_6 {
+	  	width: 15.33%;
+	}
+}
+
+/* ==========================================================================
+   Landscape Tablet
+   ========================================================================== */
+@media (max-device-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* ==========================================================================
+   Portrait Tablet
+   ========================================================================== */
+@media (max-device-width: 768px) and (orientation: portrait) {
+	
+} 
+/* ==========================================================================
+   All Phones
+   ========================================================================== */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px)  {
+	.col {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+
+/* ==========================================================================
+   Landscape Phones
+   ========================================================================== */
+@media only screen 
+and (min-device-width : 320px)
+and (max-device-width : 767px) 
+and (orientation : landscape) {
+	.overlayHeading {
+		bottom: -64px;
+	}
+}

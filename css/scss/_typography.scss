@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Base Typography
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: $ms300;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+/* ==========================================================================
+   Accessiblity font size selector
+   ========================================================================== */
+.small {font-size: 100%;}
+.medium {font-size: 110%;}
+.large {font-size: 120%;}
+
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+ 
+h1 {
+    font-family: $ms900; 
+    font-size: 1.148em;
+    border-bottom: 1px dotted $corpLightBlue;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $darkGray;
+}
+    #logo h1 {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        font-size: 1.6em;
+    }
+    h1 span {
+        font-family: $ms300;
+    }
+
+h2 {
+    font-size: .85em; 
+    font-family: $ms500;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+    #logo h2 {
+        font-family: $ms900;
+        color: $rrGreen;
+        margin-bottom: 10px;
+    }
+h3 {
+    font-size: .714em;
+}
+/* ==========================================================================
+   Paragraphs
+   ========================================================================== */
+
+p {
+    font-size: .750em;
+    line-height: 1.45em;
+    margin-bottom: 1.4em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Font size selector
+   ========================================================================== */
+#accessibility {
+    margin-left: 20px;
+}
+#accessibility li {
+    display: inline;
+    line-height: 26px;
+    margin-right: 3px;
+    vertical-align:  baseline;
+}
+#accessibility a {
+    color: $corpLightBlue;
+}
+#accessibility li.current a{
+    color: $corpDarkBlue;
+}
+    .resizer {
+        font-family: Georgia, serif; 
+    }
+    .resizer .small {
+        font-size: 11px;
+        color: red;
+    }
+    .resizer .medium {
+        font-size: 14px;
+    }
+    .resizer .large {
+        font-size: 18px;
+    }

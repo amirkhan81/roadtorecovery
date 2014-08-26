@@ -1,0 +1,9 @@
+.panel {
+    position: fixed;
+    right: -150px; /*left or right and the width of your navigation panel*/
+    width: 150px; /*should match the above value*/
+    z-index: 999;
+}
+	.wrap { 
+	    position: relative; 
+	}

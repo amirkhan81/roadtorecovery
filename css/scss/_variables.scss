@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Color Variable Definitions
+   ========================================================================== */
+
+$corpDarkBlue: #004990;
+$corpMedBlue: #738eb6;
+$corpLightBlue: #9ad7f7;
+$lightGray: #bcb9b2;
+$mediumGray: #8d8f92;
+$darkGray: #49494a;
+$bodyCopyColor: #49494a; 
+
+$mcLightPurple: #d4daef;
+$mcMedPurple: #6a7cbd;
+
+$snDarkGreen: #1887ac;
+$snMedLightGreen: #84bbd7;
+
+$hsLightTeal: #9acfe1;
+$hsDarkTeal: #45a3c2;
+
+$hhLightGreen: #c8d8a3;
+$hhMedGreen: #92be6f;
+
+$ivLightOrange: #e8941a;
+$ivMedOrange: #fcae31;
+$ivDarkOrange: #a1500b;
+
+$mbDarkGreen: #155e67;
+$mbLightGreen: #11b7c3;
+$mbHoverGreen: #0eb593;
+$mbRed: #f1695c;
+$mbBrightGreen: #80cfbb;
+
+$orLight: #76c5e4;
+$orMed: #fcae31;
+$orDark: #a1500b;
+
+$rrGreen: #10586d;
+
+/* ==========================================================================
+   Museo Sans Font Weights
+   ========================================================================== */
+$ms300: 'MuseoSans-300';
+$ms500: 'MuseoSans-500';
+$ms900: 'MuseoSans-900';
+
+
+
+/* ==========================================================================
+   Gradients
+   ========================================================================== */
+@mixin grayGradient() {
+	background-color: #939598; /* Old browsers */
+	background: -moz-linear-gradient(top,  #939598 0%, #bcbec0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#939598), color-stop(100%,#bcbec0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #939598 0%,#bcbec0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #939598 0%,#bcbec0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #939598 0%,#bcbec0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #939598 0%,#bcbec0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939598', endColorstr='#bcbec0',GradientType=0 ); /* IE6-9 */
+}
+@mixin blueGradient() {
+	background: #024a67; /* Old browsers */
+	background: -moz-linear-gradient(top,  #024a67 0%, #195c75 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#024a67), color-stop(100%,#195c75)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #024a67 0%,#195c75 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #024a67 0%,#195c75 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #024a67 0%,#195c75 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #024a67 0%,#195c75 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#024a67', endColorstr='#195c75',GradientType=0 ); /* IE6-9 */
+}
